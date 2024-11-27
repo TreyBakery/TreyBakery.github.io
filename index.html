@@ -1,0 +1,75 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KALKULATOR ZAMÓWIEŃ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shop-list">
+    <header>
+      <img src="logo.png" alt="Logo" class="logo"> <!-- Logo -->
+      <h1>KALKULATOR ZAMÓWIEŃ</h1>
+    </header>
+    <div class="item-list">
+      <table>
+        <tr>
+          <th>Przedmiot</th>
+          <th>Ilosc</th>
+        </tr>
+        <tr>
+          <td>Cynamonka</td>
+          <td><input type="number" id="item1" value="0"></td>
+        </tr>
+        <tr>
+          <td>Drożdżówka</td>
+          <td><input type="number" id="item2" value="0"></td>
+        </tr>
+        <tr>
+          <td>Galaretka Truskawkowa</td>
+          <td><input type="number" id="item3" value="0"></td>
+        </tr>
+        <tr>
+          <td>Magdalenka Owocowa</td>
+          <td><input type="number" id="item4" value="0"></td>
+        </tr>
+        <tr>
+          <td>Tiramisu</td>
+          <td><input type="number" id="item5" value="0"></td>
+        </tr>
+        <tr>
+          <td>Sernik</td>
+          <td><input type="number" id="item6" value="0"></td>
+        </tr>
+        <tr>
+          <td>Herbata</td>
+          <td><input type="number" id="item7" value="0"></td>
+        </tr>
+        <tr>
+          <td>Kawa</td>
+          <td><input type="number" id="item8" value="0"></td>
+        </tr>
+        <tr>
+          <td>Mus Malinowy</td>
+          <td><input type="number" id="item9" value="0"></td>
+        </tr>
+      </table>
+      <select id="prefixSelect">
+        <option value="H">P</option>
+        <option value="S">V</option>
+      </select>
+    </div>
+    <button class="calculate-btn" onclick="calculateTotal()">Sumuj</button>
+    <div class="total">
+      Total: <span id="total">0$</span>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

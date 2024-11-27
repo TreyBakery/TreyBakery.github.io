@@ -1,0 +1,143 @@
+#logo
+
+.logo {
+  width: 25px; /* Set the width to desired size */
+  max-width: 25px; /* Ensure it does not exceed this width */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+  top: 50%; /* Position it in the middle vertically */
+  left: 50%; /* Position it in the middle horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to center the logo */
+  z-index: -1; /* Places the logo behind other elements */
+}
+
+.shop-list {
+  position: relative; /* Ensure that the logo is positioned relative to this container */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1; /* Ensure the shop list is above the logo */
+}
+
+
+/* Add some basic styling to make the website more user-friendly */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Shop list container */
+.shop-list {
+  position: relative; /* Ensure that the logo is positioned relative to this container */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Header section */
+.shop-list header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.shop-list header h1 {
+  margin: 0;
+}
+
+
+#prefixSelect {
+  visibility: hidden; /* Hides the element but keeps its space */
+}
+
+
+
+/* Item list section */
+.shop-list .item-list {
+  padding: 20px;
+}
+
+.shop-list .item-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shop-list .item-list th, .shop-list .item-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.shop-list .item-list th {
+  background-color: #f0f0f0;
+}
+
+.shop-list .item-list td input[type="number"] {
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Calculate button */
+.shop-list .calculate-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Total section */
+.shop-list .total {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff40;
+}
+
+.shop-list .total span {
+  font-size: 24px;
+  color: #4CAF50;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('C:\Users\busin\Desktop\Nowy folder'); /* Replace with your image link */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.shop-list {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.shop-list .item-list th, .shop-list .item-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for table cells */
+}
