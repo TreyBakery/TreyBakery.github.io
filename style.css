@@ -1,18 +1,21 @@
 #logo
 
+header {
+  position: relative; /* Add this line */
+}
+
 .logo {
-  width: 25px; /* Set the width to desired size */
-  max-width: 25px; /* Ensure it does not exceed this width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Set the width to fill the parent */
+  height: 100%; /* Set the height to fill the parent */
+  object-fit: cover; /* Ensures the logo maintains its aspect ratio while covering the area */
   position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
-  top: 50%; /* Position it in the middle vertically */
-  left: 50%; /* Position it in the middle horizontally */
-  transform: translate(-50%, -50%); /* Adjust the position to center the logo */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
   z-index: -1; /* Places the logo behind other elements */
 }
 
 .shop-list {
-  position: relative; /* Ensure that the logo is positioned relative to this container */
+  position: relative; /* This is already set */
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
